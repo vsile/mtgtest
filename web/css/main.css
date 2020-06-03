@@ -1,0 +1,78 @@
+body {
+	font-family: 'Arial';
+	font-size: 1.8em;
+	margin: 0;
+}
+
+.main-block {
+	text-align: center;
+}
+
+/* Заголовки вкладок */
+.tabs-header {
+	padding: 20px 0;
+}
+.tabs-header > div {
+	display: inline-block;
+	cursor: pointer;
+}
+.tabs-header > div:not(:first-child) {
+	margin-left: 65px;
+}
+.tabs-header-active {
+	border-bottom: 2px solid green;
+}
+
+/* Содержимое вкладок */
+.tabs-content {
+	padding: 30px;
+}
+.tabs-content-dropdown > div {
+	display: inline-block;
+}
+.tabs-content-dropdown > div:not(:first-child) {
+	margin-left: 30px;
+}
+
+/* Кнопки, выпадающее меню */
+.button, select {
+	width: 240px;
+	height: 50px;
+	font-size: 0.8em;
+	border: 2px solid green;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	outline: none;
+	text-align-last:center;
+}
+.button:hover {
+	background-color: green;
+	color: #fff;
+}
+
+/* Диалоговое окно */
+.dialog-background {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(5,5,5,0.1);
+}
+.dialog-block {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+    transform: translateY(-50%);
+	padding: 20px 20px 25px 20px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.dialog-header {
+	margin-bottom: 40px;
+}
+.dialog-block > input:last-child {
+	margin-left: 30px;
+}

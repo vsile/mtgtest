@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>МТГ. Бизнес-решения</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/react.production.min.js"></script>
+    <script src="js/react-dom.production.min.js"></script>
+
+    <!-- Временно, не для Production -->
+    <!-- <script src="js/babel.min.js"></script> -->
+</head>
+<body>
+    <div id="root"></div>
+    <!--
+        Для Production
+        sudo npm install -g babel-cli
+        sudo npm install -g babel-preset-react
+        sudo npm install -g babel-plugin-syntax-object-rest-spread
+        babel --no-comments --presets /usr/local/lib/node_modules/babel-preset-react --plugins /usr/local/lib/node_modules/babel-plugin-syntax-object-rest-spread web/src/index.jsx -d ./
+    -->
+    <script src="src/index.js"></script>
+
+    <!-- Временно, не для Production -->
+    <!-- <script type="text/babel" src="src/index.jsx"></script> -->
+</body>
+
+</html>
